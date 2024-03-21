@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+*,
+*::after, 
+*::before{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white:  #FFFFFF;
+    --black:  #000000;
+    --grey:  #8B8B8B;
+
+
+
+}
+
+html::-webkit-scrollbar {
+    display: none;
+  }
+
+    /* overflow: hidden; */
+
+
+body {
+    width: 37.5rem;
+    height: 72.5625rem;
+    border: 3px solid red;
+    margin-inline: auto;
+    
+}
+
+header {
+    height: 10.4375rem;
+    background: url("./images/ferks-guare-KEZdWfYD-ow-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 66%;
+    display: flex;
+
+
+
+
+}
+
+.heading {
+    width: 15.3125rem;
+    align-self: center;
+    margin-left: 2.875rem;
+    color: var(--white);
+    font-family: 'Smythe', system-ui;
+}
+
+.heading>h1 {
+    font-weight: normal;
+    font-size: 2.4375rem;
+}
+.heading>p {
+    font-weight: normal;
+    font-size: 1.40125rem;
+} 
+
+main {
+    margin-top: 4.1875rem;
+    width: 37.5rem;
+    height: 36.0625rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.8125rem;
+;
+    
+}
+.container {
+    width: 31.75rem;
+    height: 8.75rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+hr {
+    width: 31.5rem;
+    border: 1px solid #D2D2D2;
+    margin-bottom: 2.8125rem;
+
+}
+button {
+    width: 3.125rem;
+    height: 3.125rem;
+    border: 1px solid #D2D2D2;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #3C3C3C;
+    background: none;
+    display: block;
+    margin-top: 1.5rem;
+   
+   
+
+}
+button:hover {
+    cursor: pointer;
+}
+.none {
+    margin-bottom: none;
+}
+
+.container>img {
+    width: 3.69rem;
+    height: 5.5625rem;
+
+}
+:is(#pizza>img, #burger>img) {
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.container-fluid {
+    font-family: 'Smythe', system-ui;
+    padding-right: 12.5rem;
+    display: block;
+    margin-block: auto;
+    
+}
+
+.container-fluid>h2{
+    font-weight: 400;
+    font-size: 1.75rem;
+    
+}
+.container-fluid>p{
+    font-weight: 400;
+    font-size: 1rem;
+    /* line-height: 1.5rem; */
+    color: #8B8B8B;
+    margin-bottom: none;
+}
+
+.container-fluid>h3{
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    
+    
+}
+
+#burger>.container-fluid {
+    padding-right: 16.25rem;
+}
+
+#beer>.container-fluid{
+    padding-right: 15rem;
+}
