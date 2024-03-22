@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    user-select: none;
 }
 
 *,
@@ -125,7 +126,7 @@ button:hover {
     
 }
 
-.container-fluid>h2{
+:is(.container-fluid>h2, #pre-checkout>h2, .summary>h2){
     font-weight: 400;
     font-size: 1.75rem;
     
@@ -152,4 +153,66 @@ button:hover {
 
 #beer>.container-fluid{
     padding-right: 15rem;
+}
+
+.pre-checkout{
+    width: 31.75rem;
+    height: 19.9375rem;
+    border: 3px solid red;
+    margin-top: -2rem;
+    margin-inline: auto;
+    font-family: 'Smythe', system-ui;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+        text-align: center;
+    }
+
+    #btn-checkout {
+        width: 31.75rem;
+        height: 3.75rem;
+        border: none;
+        border-style: none;
+        background-color: #16DB99;
+        border-radius: 0%;
+        
+        font-size: 1.2rem;
+        color: var(--white);
+        display: inline-block;
+        text-align: center;
+        /* margin-top: 13.75rem; */
+        margin-inline: auto;
+        
+    }
+
+    .summary {
+        padding-right: 400px;
+        
+        border: 3px solid red;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+
+        h2{
+            text-align: left;
+
+            span{
+                color: red;
+                margin-left: 
+            }
+        }
+    }
+}
+
+#pre-checkout{
+    /* display: none; */
+}
+
+.summary>hr {
+    width: 31.5rem;
+    border: 1px solid var(--black);
+    margin-block: 1rem;
+
 }
