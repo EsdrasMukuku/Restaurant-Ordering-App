@@ -158,7 +158,6 @@ button:hover {
 .pre-checkout{
     width: 31.75rem;
     height: 19.9375rem;
-    border: 3px solid red;
     margin-top: -2rem;
     margin-inline: auto;
     font-family: 'Smythe', system-ui;
@@ -171,7 +170,7 @@ button:hover {
     }
 
     #btn-checkout {
-        width: 31.75rem;
+        width: 31.55rem;
         height: 3.75rem;
         border: none;
         border-style: none;
@@ -188,19 +187,48 @@ button:hover {
     }
 
     .summary {
-        padding-right: 400px;
-        
-        border: 3px solid red;
+        padding-right: 25rem;
         text-align: left;
         display: flex;
         flex-direction: column;
 
+        .item-checkout {
+            display: flex;
+            justify-content: space-between;
+            width: 31.25rem;
+            font-style: 1.75rem;
         h2{
             text-align: left;
+            font-weight: 400;
+            font-size: 1.75rem
+        }
+            
 
-            span{
-                color: red;
-                margin-left: 
+         span{
+                color: var(--black);
+                font-size: 1.50rem;
+            }
+
+            button{
+            width: 3rem;
+            height: 1.375rem;
+            border-radius: 0;
+            border-style: none;
+            font-size: .75rem;
+            color: #BBBBBB;
+            background: none;
+            padding-bottom: -3rem;
+            margin-top: 0;
+            margin-top: 5px;
+            margin-right: 18.75rem;
+            text-align: left;
+            
+            
+            
+            }
+
+            .close_btn{ 
+                margin-left: -2.5rem;
             }
         }
     }
@@ -211,7 +239,7 @@ button:hover {
 }
 
 .summary>hr {
-    width: 31.5rem;
+    width: 31rem;
     border: 1px solid var(--black);
     margin-block: 1rem;
 
