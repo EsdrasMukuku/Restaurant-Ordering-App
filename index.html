@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Smythe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurant Ordering App</title>
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <h1>Jimmy's diner</h1>
+            <p>The best burgers and pizza in town,</p>
+        </div>
+    </header>
+    <main>
+        <div id="main-container">
+        </div>
+
+    </main>
+    <section  id="pre-checkout" class="pre-checkout">
+        <h2>Your order</h2>
+        <div class="summary" id="summary">
+        <div id="pizza-checkout" class="item-checkout">
+            <h2>Pizza</h2>
+        <button class="close_btn" id="pizza-remove">remove</button>
+        <span id="pizza-price">$</span>
+    
+
+        </div>
+         <div id="beer-checkout" class="item-checkout">
+            <h2>Beer</h2>
+            <button class="close_btn" id="beer-remove">remove</button>
+            <span id="beer-price">$</span>
+        
+        </div>
+
+        <div id="burger-checkout" class="item-checkout">
+            <h2>Hamburger</h2>
+        <button  id="burger-remove">remove</button>
+        <span id="burger-price">$</span>
+    
+        </div>
+            <hr>
+            <div class="item-checkout">
+                <h2>Total price:</h2>
+                <span id="Total">$</span>
+            </div>
+        </div>
+        <button id="btn-checkout">Complete order</button>
+    </section>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="data.js"></script>
+    
+</body>
+</html>
