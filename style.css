@@ -161,7 +161,7 @@ button:hover {
     margin-top: -2rem;
     margin-inline: auto;
     font-family: 'Smythe', system-ui;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
 
@@ -234,13 +234,13 @@ button:hover {
     }
 }
 
-#pre-checkout{
-    /* display: none; */
-}
 
 .summary>hr {
     width: 31rem;
     border: 1px solid var(--black);
     margin-block: 1rem;
 
+}
+:is(#pizza-checkout, #beer-checkout, #burger-checkout) {
+    display: none;
 }

@@ -20,46 +20,38 @@
     </header>
     <main>
         <div id="main-container">
-        <!-- <div class="container" id="pizza"><img src="./ferks-guare-KEZdWfYD-ow-unsplash.jpg" alt="">
-            <button id="btn-pizza">+</button>
         </div>
-        <hr>
-        <div class="container" id="burger">
-            <button id="btn-burger">+</button>
-        </div>
-        <hr>
-        <div class="container" id="beer">
-            <button id="btn-beer">+</button>
-        </div>
-        <hr class="none"> -->
-    </div>
 
     </main>
     <section  id="pre-checkout" class="pre-checkout">
         <h2>Your order</h2>
+        <div class="summary" id="summary">
+        <div id="pizza-checkout" class="item-checkout">
+            <h2>Pizza</h2>
+        <button class="close_btn" id="pizza-remove">remove</button>
+        <span id="pizza-price">$</span>
+    
 
-    <div class="summary" id="summary">
-       <div id="pizza-checkout" class="item-checkout">
-        <h2>Pizza</h2>
-        <button class="close_btn">remove</button>
-        <span>$14</span>
-       </div>
-       <div id="beer-checkout" class="item-checkout">
-        <h2>Beer </h2>
-        <button class="close_btn">remove</button>
-        <span>$12</span>
-       </div>
-       <div id="burger-checkout" class="item-checkout">
-        <h2>Hamburger </h2>
-        <button >remove</button>
-        <span>$12</span>
-      </div>
-       <hr>
-       <div class="item-checkout">
-       <h2>Total price:</h2>
-       <span>$100</span>
-    </div>
-    </div>
+        </div>
+         <div id="beer-checkout" class="item-checkout">
+            <h2>Beer</h2>
+            <button class="close_btn" id="beer-remove">remove</button>
+            <span id="beer-price">$</span>
+        
+        </div>
+
+        <div id="burger-checkout" class="item-checkout">
+            <h2>Hamburger</h2>
+        <button  id="burger-remove">remove</button>
+        <span id="burger-price">$</span>
+    
+        </div>
+            <hr>
+            <div class="item-checkout">
+                <h2>Total price:</h2>
+                <span id="Total">$</span>
+            </div>
+        </div>
         <button id="btn-checkout">Complete order</button>
     </section>
     <script type="module" src="script.js"></script>
