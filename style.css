@@ -202,7 +202,16 @@ button:hover {
             font-weight: 400;
             font-size: 1.75rem
         }
-            
+
+        .count{
+            color: hsl(0, 21%, 28%);
+            font-size: 1.3rem;
+            margin-left: 5rem;
+        }
+           
+        .burger {
+            margin-left: 0;
+        }
 
          span{
                 color: var(--black);
@@ -228,7 +237,7 @@ button:hover {
             }
 
             .close_btn{ 
-                margin-left: -2.5rem;
+                margin-left: -1.5rem;
             }
         }
     }

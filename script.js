@@ -3,9 +3,6 @@ import { menuArray as data} from'./data.js';
 
 const main =  document.getElementById('main-container');
 const section = document.getElementById('pre-checkout');
-const pizzaButton = document.getElementById('btn-pizza');
-const beerButton = document.getElementById('beer-btn');
-const burgerButton = document.getElementById('burger-btn');
 const pizzaPrice = document.getElementById('pizza-price');
 const beerPrice = document.getElementById('beer-price');
 const burgerPrice = document.getElementById('burger-price');
@@ -14,6 +11,7 @@ const burgerCheckout = document.getElementById('burger-checkout');
 const beerCheckout = document.getElementById('beer-checkout');
 const checkButtons = document.getElementsByClassName('check');
 const total = document.getElementById('Total');
+const checkoutButton = document.getElementById('btn-checkout');
 
 
 
@@ -69,6 +67,9 @@ let totalPrice = 0;
 let pizzaCost = 0;
 let beerCost = 0;
 let burgerCost = 0;
+let pizzaCount = 0;
+let beerCount = 0;
+let burgerCount = 0;
 
 Array.from(checkButtons).forEach(button => {
     button.addEventListener('click', function() {
