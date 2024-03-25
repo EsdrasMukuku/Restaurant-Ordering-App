@@ -15,6 +15,7 @@ const pizzaNum = document.getElementById('pizza_count');
 const beerNum = document.getElementById('beer_count');
 const burgerNum = document.getElementById('burger_count');
 const checkoutButton = document.getElementById('btn-checkout');
+const form = document.getElementById('form');
 
 
 
@@ -145,6 +146,12 @@ document.getElementById('burger-remove').addEventListener('click', function() {
     total.textContent = '$' + totalPrice;
     
 })
+
+checkoutButton.addEventListener('click', function() {
+    form.style.display = 'flex';
+    main.style.pointerEvents = 'none';
+    section.style.pointerEvents = 'none';
+});
 
 
 
