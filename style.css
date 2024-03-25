@@ -197,12 +197,22 @@ button:hover {
             justify-content: space-between;
             width: 31.25rem;
             font-style: 1.75rem;
+            overflow: none;
         h2{
             text-align: left;
             font-weight: 400;
             font-size: 1.75rem
         }
-            
+
+        .count{
+            color: hsl(0, 21%, 28%);
+            font-size: 1.3rem;
+            margin-left: 5rem;
+        }
+           
+        .count {
+            margin-left: 0;
+        }
 
          span{
                 color: var(--black);
@@ -227,9 +237,23 @@ button:hover {
             
             }
 
-            .close_btn{ 
-                margin-left: -2.5rem;
+            #burger_count {
+                margin-left: -3.5rem;
+                
             }
+            .foo{
+               margin-left: 1.7rem; 
+            }
+            #burger-remove{
+                margin-left: -.5rem;
+
+            }
+            #burger-price{
+                margin-left: -1rem;
+            }
+            /* .count{
+                margin-right: 1rem;
+            } */
         }
     }
 }
