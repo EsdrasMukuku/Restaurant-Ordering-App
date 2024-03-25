@@ -23,7 +23,7 @@ html::-webkit-scrollbar {
 body {
     width: 37.5rem;
     height: 72.5625rem;
-    border: 3px solid red;
+    border: 3px solid rgba(128, 128, 128, 0.225);
     margin-inline: auto;
 }
 
