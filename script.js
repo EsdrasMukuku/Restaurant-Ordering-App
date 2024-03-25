@@ -16,6 +16,8 @@ const beerNum = document.getElementById('beer_count');
 const burgerNum = document.getElementById('burger_count');
 const checkoutButton = document.getElementById('btn-checkout');
 const form = document.getElementById('form');
+const submit = document.getElementById('submit');
+const name = document.getElementById('name');
 
 let totalPrice = 0;
 let pizzaCost = 0;
@@ -100,6 +102,12 @@ const  updatePayment = (first, second, third) => {
     third.style.pointerEvents = 'none';
 }
 
+const thanks = (user) => {
+    return `<div id='thanks'>Thanks,<b>${user}</b>! Your order is on the way!</div>`
+};
+
+
+
 
 
 main.innerHTML += mainRendering();
@@ -153,6 +161,14 @@ document.getElementById('burger-remove').addEventListener('click', () => {
 
 checkoutButton.addEventListener('click', () => {
     updatePayment(form, section, main);
+});
+
+submit.addEventListener('click', (e) => {
+    e.preventDefault();
+    form.style.display = 'none';
+    localStorage.setItem('username', name.value);
+    section.innerHTML = thanks(localStorage.getItem('username'));
+    localStorage.clearItem('username');
 });
 
 

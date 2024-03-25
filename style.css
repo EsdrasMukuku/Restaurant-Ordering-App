@@ -270,3 +270,15 @@ aside {
     margin-inline: auto;
 
 }
+#thanks {
+    color: #065F46;
+    background-color: #ECFDF5;
+    width: 31.5rem;
+    height: 7.5rem;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Smythe', system-ui;
+}
