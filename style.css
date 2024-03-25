@@ -197,6 +197,7 @@ button:hover {
             justify-content: space-between;
             width: 31.25rem;
             font-style: 1.75rem;
+            overflow: none;
         h2{
             text-align: left;
             font-weight: 400;
@@ -209,7 +210,7 @@ button:hover {
             margin-left: 5rem;
         }
            
-        .burger {
+        .count {
             margin-left: 0;
         }
 
@@ -236,9 +237,23 @@ button:hover {
             
             }
 
-            .close_btn{ 
-                margin-left: -1.5rem;
+            #burger_count {
+                margin-left: -3.5rem;
+                
             }
+            .foo{
+               margin-left: 1.7rem; 
+            }
+            #burger-remove{
+                margin-left: -.5rem;
+
+            }
+            #burger-price{
+                margin-left: -1rem;
+            }
+            /* .count{
+                margin-right: 1rem;
+            } */
         }
     }
 }
