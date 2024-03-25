@@ -24,13 +24,20 @@ html::-webkit-scrollbar {
   }
 
     /* overflow: hidden; */
+html{
 
+
+
+
+    border: 3px solid red;
+}
 
 body {
     width: 37.5rem;
     height: 72.5625rem;
     border: 3px solid red;
     margin-inline: auto;
+
     
 }
 
@@ -169,22 +176,7 @@ button:hover {
         text-align: center;
     }
 
-    #btn-checkout {
-        width: 31.55rem;
-        height: 3.75rem;
-        border: none;
-        border-style: none;
-        background-color: #16DB99;
-        border-radius: 0%;
-        
-        font-size: 1.2rem;
-        color: var(--white);
-        display: inline-block;
-        text-align: center;
-        /* margin-top: 13.75rem; */
-        margin-inline: auto;
-        
-    }
+   
 
     .summary {
         padding-right: 25rem;
@@ -197,12 +189,22 @@ button:hover {
             justify-content: space-between;
             width: 31.25rem;
             font-style: 1.75rem;
+            overflow: none;
         h2{
             text-align: left;
             font-weight: 400;
             font-size: 1.75rem
         }
-            
+
+        .count{
+            color: hsl(0, 21%, 28%);
+            font-size: 1.3rem;
+            margin-left: 5rem;
+        }
+           
+        .count {
+            margin-left: 0;
+        }
 
          span{
                 color: var(--black);
@@ -227,9 +229,23 @@ button:hover {
             
             }
 
-            .close_btn{ 
-                margin-left: -2.5rem;
+            #burger_count {
+                margin-left: -3.5rem;
+                
             }
+            .foo{
+               margin-left: 1.7rem; 
+            }
+            #burger-remove{
+                margin-left: -.5rem;
+
+            }
+            #burger-price{
+                margin-left: -1rem;
+            }
+            /* .count{
+                margin-right: 1rem;
+            } */
         }
     }
 }
@@ -243,4 +259,69 @@ button:hover {
 }
 :is(#pizza-checkout, #beer-checkout, #burger-checkout) {
     display: none;
+}
+
+aside {
+  
+
+    form{
+    width: 32.765rem;
+    height: 32.75rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-inline: auto;
+    margin-top: 19.8rem;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 80px 10px;
+    border-radius: 3px;
+        
+        h2{
+            padding-bottom: 3rem;
+            padding-right: 4rem;
+            font-family: 'Verdana', sans-serif;
+            font-size: 1.5rem;
+                                                
+        }
+
+        input{
+            width: 31.55rem;
+            height: 3.75rem;
+            padding-left: 1rem;
+            margin-bottom: 1rem;
+            font-family: 'Verdana', sans-serif;
+            border: 1px solid #757575;
+            border-radius: 3.89px;
+            font-size: 1.25rem;
+        }
+        input:is(:focus){
+            border: 1px solid #757575;
+            outline: none;
+        }
+    }
+
+}
+
+.checkout {
+    width: 31.55rem;
+    height: 3.75rem;
+    border: none;
+    border-style: none;
+    background-color: #16DB99;
+    border-radius: 0%;
+    
+    font-size: 1.2rem;
+    color: var(--white);
+    display: inline-block;
+    text-align: center;
+
+    margin-inline: auto;
+    
 }
